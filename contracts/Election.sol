@@ -19,7 +19,7 @@ contract Election{
 		addCandidate("Bunny Singh");
 	}
 
-	function addCandidate(string _name) private{
+	function addCandidate(string memory _name) private{
 		candidateCount++;
 		candidates[candidateCount] = Candidate(candidateCount,_name,0);
 	}
